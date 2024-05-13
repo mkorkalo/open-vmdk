@@ -202,7 +202,7 @@ if [ ${ovf} == "true" ] ; then
     echo "Completed to create ovf files in directory ${name}"
 else
     pushd $TMPDIR
-    tar --format=ustar -cf ../${name}.ova *.ovf *.mf *.vmdk
+    tar -cf ../${name}.ova *.ovf *.mf *.vmdk
     popd
 
     echo "Completed to create ${name}.ova"
